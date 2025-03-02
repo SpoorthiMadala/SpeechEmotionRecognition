@@ -3,7 +3,7 @@ import os
 print("Starting Speech Emotion Recognition Project...\n")
 
 # Step 1: Extract Features
-print("📂 Step 1: Extracting Features...")
+print("Step 1: Extracting Features...")
 if os.system("python scripts/data_preprocessing.py") == 0:
     print("Feature Extraction Completed.\n")
 else:
