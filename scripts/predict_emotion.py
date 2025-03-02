@@ -24,7 +24,7 @@ def extract_mfcc(file_path, sr=22050, n_mfcc=40):
 # Predict Emotion
 def predict_emotion(file_path):
     if not os.path.isfile(file_path):
-        print("❌ Error: File not found!")
+        print("Error: File not found!")
         return None
     
     features = extract_mfcc(file_path).reshape(1, -1)
@@ -38,5 +38,5 @@ if __name__ == "__main__":
     file_path = input("Enter the path to the audio file: ").strip()
     emotion = predict_emotion(file_path)
     if emotion:
-        print(f"🎯 Predicted Emotion: {emotion}")
+        print(f"Predicted Emotion: {emotion}")
 
